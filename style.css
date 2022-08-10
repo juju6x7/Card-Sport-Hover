@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(63, 2, 176);
+}
+
+.container {
+    width: 960px;
+    margin: 0px auto;
+}
+
+.title {
+    font-size: 3rem;
+    color: white;
+}
+
+h2 {
+    font-size: 1.8rem;
+    line-height: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Anton', sans-serif;
+    color: rgb(89, 0, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon a:hover {
+    background: rgb(89, 0, 255) !important;
+}
+
+.bio {
+    padding-bottom: 20px;
+    line-height: 0.7rem;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card .profile {
+    transition: 0.2s;
+}
+
+.card:hover .profile {
+    transform: scale(1.4);
+}
+
+.card:hover .profile-kyrgios {
+    transform: scale(1.4) translate(0, 50px);
+    transition: 0.2s;
+}
+
+.card .content {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card .content .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1e6;
+    transition: 1s;
+    z-index: 1;
+    padding: 5px;
+}
+
+.from-left {
+    top: 0;
+    left: -100%;
+}
+
+.card:hover .content .from-left {
+    left: 0%;
+}
+
+.from-bottom {
+    top: 100%;
+    left: 0;
+}
+
+.card:hover .content .from-bottom {
+    top: 0%;
+}
+
+.from-right {
+    top: 0%;
+    right: -100%;
+}
+
+.card:hover .content .from-right {
+    right: 0;
+}
+
+.flag {
+    width: 50px;
+    padding-top: 1rem;
+    border-radius: 50%;
+}
+
+.icon-sport {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.emoji {
+    font-size: 1.4rem;
+}
+
+.card .content .back .social-icon {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card .content .back .social-icon li {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.card .content .back .social-icon li a {
+    display: block;
+    background: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+}
+
+.me {
+    text-align: center;
+    color: white;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    padding: 5px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.fa-brands:hover {
+    color: aqua;
+}
